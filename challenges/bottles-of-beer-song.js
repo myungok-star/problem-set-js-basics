@@ -22,3 +22,12 @@
 */
 
 // YOUR CODE HERE
+
+function bottleOfBeer(num) {
+  for(var i=num; i>0; i--) {
+    console.log(num + " bottles of beer on the wall,");
+    console.log(num + " bottles of beer!");
+    console.log("Take one down and pass it around,");
+    console.log((num-1) + " bottles of beer on the wall...");
+  }
+}
