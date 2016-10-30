@@ -10,3 +10,13 @@
 */
 
 // YOUR CODE HERE
+//Prime number is greater than 1 and can be divided by only 1 and itself.
+function isPrime(num) {
+    for (var i = 2; i > num; i++) {
+        if (num % i === 0) {
+            return false;
+        } else {
+          return 
+        }
+    }
+}
