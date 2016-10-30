@@ -24,10 +24,23 @@
 // YOUR CODE HERE
 
 function bottleOfBeer(num) {
-  for(var i=num; i>0; i--) {
-    console.log(num + " bottles of beer on the wall,");
-    console.log(num + " bottles of beer!");
-    console.log("Take one down and pass it around,");
-    console.log((num-1) + " bottles of beer on the wall...");
-  }
+    for (var i = num; i > 0; i--) {
+        if (num > 1) {
+            console.log(num + " bottles of beer on the wall,");
+            console.log(num + " bottles of beer!");
+            console.log("Take one down and pass it around,");
+            if (num - 1 === 1) {
+                console.log("one bottle of beer on the wall...");
+            } else {
+                console.log((num - 1) + " bottles of beer on the wall...");
+            }
+        } else if (num === 1) {
+            console.log(num + " bottles of beer on the wall,");
+            console.log(num + " bottles of beer!");
+            console.log("Take one down and pass it around,");
+            console.log("No more beer on the wall...");
+        }
+
+    }
 }
+bottleOfBeer(num);
