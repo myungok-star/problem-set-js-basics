@@ -28,6 +28,20 @@ function isPrime(num) {
     }
 }
 
+function primes(max) {
+    var primeNumbersArray = [];
+    for (var i = 2; i < max; i++) {
+        if (isPrime(i)) {
+            primeNumbersArray.push(i);
+        }
+    }
+    return primeNumbersArray;
+}
+primes(100);
+
+
+
+
 
 
 
